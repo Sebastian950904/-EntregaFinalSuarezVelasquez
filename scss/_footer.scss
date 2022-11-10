@@ -1,0 +1,29 @@
+footer {
+  background-color: black;
+  text-align: center;
+  margin-top: 60px;
+  padding: 2rem 0 0 0;
+  .footer-sm {
+    font-size: 2.5rem;
+    background-image: $primary_color;
+    .row-footer-icons {
+      padding: 2rem 0;
+      font-size: 30px;
+      font-weight: 700;
+      color: black;
+      :hover {
+        color: blue;
+      }
+    }
+  }
+}
+.row-footer-icons a {
+  text-decoration: none;
+  color: wheat;
+  margin: 40px;
+  font-size: 50px;
+}
+.footer-bottom {
+  padding: 2rem 0;
+  color: blue;
+}
