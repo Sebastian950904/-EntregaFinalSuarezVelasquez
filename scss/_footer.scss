@@ -11,8 +11,8 @@ footer {
       font-size: 30px;
       font-weight: 700;
       color: black;
-      :hover {
-        color: blue;
+      &:hover {
+        color: rgb(255, 255, 255);
       }
     }
   }
@@ -23,6 +23,7 @@ footer {
   margin: 40px;
   font-size: 50px;
 }
+
 .footer-bottom {
   padding: 2rem 0;
   color: blue;

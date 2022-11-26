@@ -4,6 +4,61 @@
   box-sizing: border-box;
 }
 
+form {
+  text-align: center;
+  color: aqua;
+}
+
+.form-check {
+  text-align: start;
+}
+
+.tarjeta {
+  background-color: rgba(0, 0, 148, 0.281);
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(34, 26, 147, 0.363);
+}
+.tarjeta li {
+  list-style: none;
+  text-align: justify;
+}
+.tarjeta .btn {
+  text-decoration: none;
+  background-color: rgba(58, 48, 206, 0.4431372549);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.tarjeta .btn:hover {
+  background-color: #03045e;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.responsiveContent {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.2%;
+  margin-bottom: 20px;
+}
+
+.responsiveContent iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   padding-top: 0.5rem;
   font-family: "Montserrat", sans-serif;
@@ -22,31 +77,30 @@ body h2 {
   background-image: linear-gradient(to right, #0077b6, #03045e);
   color: rgb(130, 5, 5);
   text-align: center;
-  font-size: 2.5rem;
-  letter-spacing: 9px;
-  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-weight: 600;
   text-transform: uppercase;
-  animation: blur 1.75s ease-out infinite;
+  animation-iteration-count: 2;
+  animation: blur 5.75s ease-out infinite;
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
-
-section {
-  background-color: rgba(253, 251, 251, 0.135);
-  text-align: center;
-  color: rgb(247, 247, 247);
-  margin-top: 30px;
-}
-section h3 {
-  padding: 1.5rem;
-  background-color: #080442;
+body h3 {
   font-size: 2rem;
+  color: rgba(223, 219, 230, 0.982);
 }
-
-ol {
+body .questions {
+  margin-top: 40px;
+  color: rgba(223, 219, 230, 0.982);
+}
+body .questions ol {
+  list-style: none;
+}
+body .questions .row {
+  background-color: rgba(0, 0, 148, 0.281);
+}
+body .questions p {
   text-align: center;
-}
-ol li {
-  text-align: start;
 }
 
 footer {
@@ -65,8 +119,8 @@ footer .footer-sm .row-footer-icons {
   font-weight: 700;
   color: black;
 }
-footer .footer-sm .row-footer-icons :hover {
-  color: blue;
+footer .footer-sm .row-footer-icons:hover {
+  color: rgb(255, 255, 255);
 }
 
 .row-footer-icons a {
@@ -79,6 +133,33 @@ footer .footer-sm .row-footer-icons :hover {
 .footer-bottom {
   padding: 2rem 0;
   color: blue;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .title1 {
+    font-size: 1rem;
+  }
+}
+.download-logo {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contacto {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 148, 0.281);
+  color: rgba(223, 219, 230, 0.982);
+  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */

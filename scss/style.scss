@@ -1,5 +1,43 @@
-@import "globals";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "contac";
 @import "variables";
-@import "navbar";
+@import "tarjeta";
 @import "faq";
 @import "footer";
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .title1 {
+    font-size: 1rem;
+  }
+}
+.download-logo {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contacto {
+  padding: 20px;
+  text-align: center;
+  background-color: $fondo;
+  color: $text_color;
+  font-size: large;
+}
